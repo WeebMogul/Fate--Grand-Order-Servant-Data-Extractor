@@ -12,7 +12,7 @@ column = ['Name','Alias','Class','ID','Rarity','Drain','Max Lvl.','ATK lvl. 1','
 
 rarity = {'★★★ R':'3-Star','★★★★★ SSR':'5-star','★★★★ SR':'4-Star','★★':'2-Star','★':'1-Star','---':'2-Star'}
 
-Servant_count = 236
+Servant_count = 237
 
 
 for i in range(1,Servant_count):
