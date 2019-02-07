@@ -2,6 +2,7 @@ import bs4 as bs
 import requests
 import pandas as pd
 import numpy as np
+import time
 
 Servant_Data = []
 
@@ -12,7 +13,7 @@ column = ['Name','Alias','Class','ID','Rarity','Drain','Max Lvl.','ATK lvl. 1','
 
 rarity = {'★★★ R':'3-Star','★★★★★ SSR':'5-star','★★★★ SR':'4-Star','★★':'2-Star','★':'1-Star','---':'2-Star'}
 
-Servant_count = 237
+Servant_count = 238
 
 
 for i in range(1,Servant_count):
@@ -25,7 +26,7 @@ for i in range(1,Servant_count):
     print('Current Servant count : ',i)
 
     'HTTP request to Cirnopedia website'
-   req = requests.get('https://fate-go.cirnopedia.org/servant_profile.php?servant=' + str(i),headers={'User Agent': 'Mozilla/5.0'})
+   req = requests.get('http://fate-go.cirnopedia.org/servant_profile.php?servant=' + str(i),headers={'User Agent': 'Mozilla/5.0'})
    soup = bs.BeautifulSoup(req.content,'lxml')
 
    'Get contents of the tables in the Servant Profile'
@@ -54,6 +55,8 @@ for i in range(1,Servant_count):
      td_desc = tr.find_all('td',class_='desc')
      servant_table3 = [str(st3.text.strip())for st3 in td_desc]
      Servant_Data.extend(servant_table3)
+
+
 
 'Create a dataframe to store the values and columns'
 
