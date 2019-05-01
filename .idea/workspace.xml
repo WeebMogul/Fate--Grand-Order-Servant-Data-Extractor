@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf3b419-accb-44e1-b49b-7cf23ad3a559" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FGO_Data_Extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/FGO_Data_Extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FGO_Servant_Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/FGO_Servant_Data.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +18,8 @@
       <file leaf-file-name="FGO_Data_Extractor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FGO_Data_Extractor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+            <state relative-caret-position="90">
+              <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -51,13 +53,14 @@
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,16 +143,16 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4985755" visible="true" weight="0.20621282" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4985755" visible="true" weight="0.20621282" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5445402" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32905984" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.54415953" />
       <window_info id="Structure" order="1" sideWeight="0.5014245" side_tool="true" weight="0.28155982" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988604" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -208,6 +211,16 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/FGO_Data_Extractor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FGO_Data_Extractor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -614,8 +627,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FGO_Data_Extractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+        <state relative-caret-position="90">
+          <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
