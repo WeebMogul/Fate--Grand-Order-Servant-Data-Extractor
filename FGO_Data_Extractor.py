@@ -13,13 +13,13 @@ column = ['Name','Alias','Class','ID','Rarity','Drain','Max Lvl.','ATK lvl. 1','
 
 rarity = {'★★★ R':'3-Star','★★★★★ SSR':'5-star','★★★★ SR':'4-Star','★★':'2-Star','★':'1-Star','---':'2-Star'}
 
-Servant_count = 239
+Servant_count = 242
 
 
 for i in range(1,Servant_count):
 
-   'Numbers for Tiamat,Goetia,Solomon and Beast III excluded'
-   if( i in [149,151,152,168]):
+   'Numbers for Tiamat,Goetia,Solomon and Beast III(L/R) excluded'
+   if( i in [149,151,152,168,239]):
       continue
    else:
 
