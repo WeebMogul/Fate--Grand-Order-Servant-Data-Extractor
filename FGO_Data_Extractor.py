@@ -13,7 +13,7 @@ column = ['Name','Alias','Class','ID','Rarity','Drain','Max Lvl.','ATK lvl. 1','
 
 rarity = {'★★★ R':'3-Star','★★★★★ SSR':'5-star','★★★★ SR':'4-Star','★★':'2-Star','★':'1-Star','---':'2-Star'}
 
-Servant_count = 242
+Servant_count = 247
 
 
 for i in range(1,Servant_count):
@@ -25,7 +25,7 @@ for i in range(1,Servant_count):
 
     print('Current Servant count : ',i)
 
-    'HTTP request to Cirnopedia website'
+   'HTTP request to Cirnopedia website'
    req = requests.get('http://fate-go.cirnopedia.org/servant_profile.php?servant=' + str(i),headers={'User Agent': 'Mozilla/5.0'})
    soup = bs.BeautifulSoup(req.content,'lxml')
 
