@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdf3b419-accb-44e1-b49b-7cf23ad3a559" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/FGO_Data_Extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/FGO_Data_Extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FGO_Servant_Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/FGO_Servant_Data.csv" afterDir="false" />
-    </list>
+    <list default="true" id="fdf3b419-accb-44e1-b49b-7cf23ad3a559" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
