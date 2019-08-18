@@ -3,14 +3,14 @@ import requests
 import pandas as pd
 import numpy as np
 import time
-from IPython.display import HTML, display
 
 Servant_Data = []
 
-column = ['Name','Alias','Class','ID','Rarity','Drain','Max Servant lvl.','ATK lvl. 1','HP lvl. 1','ATK lvl. at MAX Servant level',
-          'HP lvl. at MAX Servant level','ATK lvl. 90','HP lvl. 90','ATK lvl. 100','HP lvl. 100','NP gain','Quick Card Hits','Star Weight','Arts Card Hits','Star Rate',
-          'Buster Card Hits','Death Rate','Extra Attack Hits','Attribute','Noble Phantasm Hits','Traits','Height and Weight','Alignment','Series','Gender',
-          'Origin','Region']
+column = ['Name','Alias','Class','ID','Rarity','Drain','Max Lvl.','ATK lvl. 1','HP lvl. 1','ATK lvl. at MAX Servant level',
+          'HP lvl. at MAX Servant level','ATK lvl. 90','HP lvl. 90','ATK lvl. 100','HP lvl. 100'
+    ,'MAX ATK + Fou','MAX HP + Fou','NP gain','Quick Card Hits','Star Weight','Arts Card Hits','Star Rate',
+         'Buster Card Hits','Death Rate','Extra Attack Hits','Attribute','Noble Phantasm Hits','Traits','Height and Weight','Alignment','Series','Gender'
+         ,'Origin','Region']
 
 rarity = {'★★★ R':'3-Star','★★★★★ SSR':'5-star','★★★★ SR':'4-Star','★★':'2-Star','★':'1-Star','---':'2-Star'}
 
@@ -20,7 +20,7 @@ Servant_count = 265
 for i in range(1,Servant_count):
    servdata = []
    'Numbers for Tiamat,Goetia,Solomon and Beast III(L/R) excluded'
-   if( i in [149,151,152,168,240]):
+   if( i in [149,151,152,168,239]):
       continue
    else:
 
@@ -73,10 +73,12 @@ print(len(Servant_Data))
 
 'Create a dataframe to store the values and columns'
 
-df = pd.DataFrame(np.array(Servant_Data).reshape(Servant_count-6,32),columns=column)
+df = pd.DataFrame(np.array(Servant_Data).reshape(Servant_count-6,32))
+#df = pd.DataFrame(Servant_Data, columns=column)
+print(df)
 
 
-df = df[['ID','Name','Alias','Class','Rarity','Drain','Max Servant lvl.','ATK lvl. 1','HP lvl. 1','ATK lvl. at MAX Servant level',
+df = df[['ID','Name','Alias','Class','Rarity','Drain','Max Lvl.','ATK lvl. 1','HP lvl. 1','ATK lvl. at MAX Servant level',
          'HP lvl. at MAX Servant level','ATK lvl. 90','HP lvl. 90','ATK lvl. 100','HP lvl. 100','NP gain','Star Weight','Star Rate','Death Rate','Buster Card Hits',
          'Arts Card Hits','Quick Card Hits', 'Extra Attack Hits','Attribute','Noble Phantasm Hits','Traits','Height and Weight','Alignment','Series','Gender',
          'Origin','Region']]
@@ -99,7 +101,7 @@ df['Extra Attack Hits'] = df['Extra Attack Hits'].replace('Hits'," ",regex=True)
 
 df['Rarity'] = df['Rarity'].replace(rarity)
 
-df = df[['ID','Name','Alias','Class','Rarity','Drain','Max Servant lvl.','ATK lvl. 1','HP lvl. 1',
+df = df[['ID','Name','Alias','Class','Rarity','Drain','Max Lvl.','ATK lvl. 1','HP lvl. 1',
            'ATK lvl. at MAX Servant level','HP lvl. at MAX Servant level','ATK lvl. 90','HP lvl. 90','ATK lvl. 100','HP lvl. 100',
           'ATK NP gain','DEF NP gain','Star Weight','Star Rate','Death Rate','Buster Card Hits','Arts Card Hits','Quick Card Hits',
           'Extra Attack Hits','Noble Phantasm Hits','Attribute','Traits','Height','Weight','Alignment','Series','Gender','Origin','Region']]
@@ -107,3 +109,5 @@ df = df[['ID','Name','Alias','Class','Rarity','Drain','Max Servant lvl.','ATK lv
 'Write to a .csv file'
 
 df.to_csv("FGO_Servant_Data.csv",encoding = 'utf-8-sig',index=False)
+#df.to_json("FGO_Servant_Data.json",orient='split');
+
