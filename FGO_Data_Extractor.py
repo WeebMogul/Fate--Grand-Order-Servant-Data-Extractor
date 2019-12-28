@@ -3,18 +3,17 @@ import requests
 import pandas as pd
 import numpy as np
 import time
-from IPython.display import HTML, display
 
 Servant_Data = []
 
 column = ['Name','Alias','Class','ID','Rarity','Drain','Max Servant lvl.','ATK lvl. 1','HP lvl. 1','ATK lvl. at MAX Servant level',
           'HP lvl. at MAX Servant level','ATK lvl. 90','HP lvl. 90','ATK lvl. 100','HP lvl. 100','NP gain','Quick Card Hits','Star Weight','Arts Card Hits','Star Rate',
-          'Buster Card Hits','Death Rate','Extra Attack Hits','Attribute','Noble Phantasm Hits','Traits','Height and Weight','Alignment','Series','Gender',
+          'Buster Card Hits','Death Rate','Extra Attack Hits','Attribute','Noble Phantasm Hits','Traits','Illustrator','Voice Actor','Height and Weight','Alignment','Series','Gender',
           'Origin','Region']
 
 rarity = {'★★★ R':'3-Star','★★★★★ SSR':'5-star','★★★★ SR':'4-Star','★★':'2-Star','★':'1-Star','---':'2-Star'}
 
-Servant_count = 265
+Servant_count = 275
 
 
 for i in range(1,Servant_count):
@@ -59,6 +58,13 @@ for i in range(1,Servant_count):
     servant_table2 = [str(st2.text.strip()) for st2 in td_desc]
     Servant_Data.extend(servant_table2)
 
+   table_rows6 = table[6].find_all('tr')
+
+   for tr in table_rows6:
+       td_desc = tr.find_all('td', class_='desc')
+       servant_table6 = [str(st2.text.strip()) for st2 in td_desc]
+       Servant_Data.extend(servant_table6)
+
    'Data from the Background 1 table (excluding comment)'
    table_row_9 = table[9].find_all('tr')[:3]
 
@@ -73,12 +79,11 @@ print(len(Servant_Data))
 
 'Create a dataframe to store the values and columns'
 
-df = pd.DataFrame(np.array(Servant_Data).reshape(Servant_count-6,32),columns=column)
-
+df = pd.DataFrame(np.array(Servant_Data).reshape(Servant_count-6,34),columns=column)
 
 df = df[['ID','Name','Alias','Class','Rarity','Drain','Max Servant lvl.','ATK lvl. 1','HP lvl. 1','ATK lvl. at MAX Servant level',
          'HP lvl. at MAX Servant level','ATK lvl. 90','HP lvl. 90','ATK lvl. 100','HP lvl. 100','NP gain','Star Weight','Star Rate','Death Rate','Buster Card Hits',
-         'Arts Card Hits','Quick Card Hits', 'Extra Attack Hits','Attribute','Noble Phantasm Hits','Traits','Height and Weight','Alignment','Series','Gender',
+         'Arts Card Hits','Quick Card Hits', 'Extra Attack Hits','Attribute','Noble Phantasm Hits','Traits','Illustrator','Voice Actor','Height and Weight','Alignment','Series','Gender',
          'Origin','Region']]
 
 new_NP = df['NP gain'].str.split('・',n=1,expand=True)
@@ -102,7 +107,7 @@ df['Rarity'] = df['Rarity'].replace(rarity)
 df = df[['ID','Name','Alias','Class','Rarity','Drain','Max Servant lvl.','ATK lvl. 1','HP lvl. 1',
            'ATK lvl. at MAX Servant level','HP lvl. at MAX Servant level','ATK lvl. 90','HP lvl. 90','ATK lvl. 100','HP lvl. 100',
           'ATK NP gain','DEF NP gain','Star Weight','Star Rate','Death Rate','Buster Card Hits','Arts Card Hits','Quick Card Hits',
-          'Extra Attack Hits','Noble Phantasm Hits','Attribute','Traits','Height','Weight','Alignment','Series','Gender','Origin','Region']]
+          'Extra Attack Hits','Noble Phantasm Hits','Attribute','Traits','Illustrator','Voice Actor','Height','Weight','Alignment','Series','Gender','Origin','Region']]
 
 'Write to a .csv file'
 
