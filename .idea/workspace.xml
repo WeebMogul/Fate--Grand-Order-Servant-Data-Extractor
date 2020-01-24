@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf3b419-accb-44e1-b49b-7cf23ad3a559" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FGO DATA EXTRACTOR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FGO DATA EXTRACTOR.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FGO Data Extractor.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FGO Data Extractor.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FGO_Data_Extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/FGO_Data_Extractor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FGO_Servant_Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/FGO_Servant_Data.csv" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,22 +24,15 @@
   </component>
   <component name="ProjectId" id="1PxB3UCzewqEvcoDrpaaZLN12Fz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Python/Senku Sentiment Analyzer 2.0" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.FGO_Data_Extractor">
     <configuration name="FGO_Data_Extractor" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -100,6 +88,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -125,6 +125,32 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1578412738158">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578412738158" />
+    <state width="1515" height="364" key="GridCell.Tab.0.bottom" timestamp="1578405346929">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="364" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578405346929" />
+    <state width="1515" height="364" key="GridCell.Tab.0.center" timestamp="1578405346929">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="364" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578405346929" />
+    <state width="1515" height="364" key="GridCell.Tab.0.left" timestamp="1578405346929">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="364" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578405346929" />
+    <state width="1515" height="364" key="GridCell.Tab.0.right" timestamp="1578405346929">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="364" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578405346929" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1578412728924">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1578412728924" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
