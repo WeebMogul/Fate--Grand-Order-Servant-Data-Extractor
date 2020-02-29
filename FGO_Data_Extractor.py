@@ -13,7 +13,7 @@ column = ['Name','Alias','Class','ID','Rarity','Drain','Max Servant lvl.','ATK l
 
 rarity = {'★★★ R':'3-Star','★★★★★ SSR':'5-star','★★★★ SR':'4-Star','★★':'2-Star','★':'1-Star','---':'2-Star'}
 
-Servant_count = 276
+Servant_count = 277
 
 
 for i in range(1,Servant_count):
@@ -104,10 +104,19 @@ df['Extra Attack Hits'] = df['Extra Attack Hits'].replace('Hits'," ",regex=True)
 
 df['Rarity'] = df['Rarity'].replace(rarity)
 
+df['ATK lvl. at MAX Servant level'] = df['ATK lvl. at MAX Servant level'].replace(r'\(.*\)','',regex = True)
+df['HP lvl. at MAX Servant level'] = df['HP lvl. at MAX Servant level'].replace(r'\(.*\)','',regex = True)
+df['ATK lvl. 90'] = df['ATK lvl. 90'].replace(r'\(.*\)','',regex = True)
+df['HP lvl. 90'] = df['HP lvl. 90'].replace(r'\(.*\)','',regex = True)
+df['ATK lvl. 100'] = df['ATK lvl. 100'].replace(r'\(.*\)','',regex = True)
+df['HP lvl. 100'] = df['HP lvl. 100'].replace(r'\(.*\)','',regex = True)
+
+
 df = df[['ID','Name','Alias','Class','Rarity','Drain','Max Servant lvl.','ATK lvl. 1','HP lvl. 1',
            'ATK lvl. at MAX Servant level','HP lvl. at MAX Servant level','ATK lvl. 90','HP lvl. 90','ATK lvl. 100','HP lvl. 100',
           'ATK NP gain','DEF NP gain','Star Weight','Star Rate','Death Rate','Buster Card Hits','Arts Card Hits','Quick Card Hits',
           'Extra Attack Hits','Noble Phantasm Hits','Attribute','Traits','Illustrator','Voice Actor','Height','Weight','Alignment','Series','Gender','Origin','Region']]
+
 
 'Write to a .csv file'
 
